@@ -38,6 +38,9 @@ body {
 
 .pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 8px 16px; font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: .02em; }
 .pill-ghost { border: 2px solid var(--magenta); color: var(--white); }
+.top-right { display: flex; align-items: center; gap: 14px; }
+.logout { color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; }
+.logout:hover { color: var(--white); }
 
 /* Hero */
 .hero { padding: 64px 0 28px; }
