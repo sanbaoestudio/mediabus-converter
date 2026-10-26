@@ -1,0 +1,24 @@
+{
+  "name": "mediabus-converter",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "copy-core": "node scripts/copy-core.mjs",
+    "dev": "npm run copy-core && vite",
+    "build": "npm run copy-core && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ffmpeg/core": "0.12.10",
+    "@ffmpeg/core-mt": "0.12.10",
+    "@ffmpeg/ffmpeg": "0.12.15",
+    "@ffmpeg/util": "0.12.2",
+    "@fontsource/epilogue": "5.2.6",
+    "@fontsource/inter": "5.2.6",
+    "fflate": "0.8.2"
+  },
+  "devDependencies": {
+    "vite": "6.3.5"
+  }
+}
