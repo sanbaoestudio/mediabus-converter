@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Mediabus Converter</title>
-  <meta name="description" content="Convertí tus videos con la máxima compatibilidad para las pantallas de MediaBus TV y Backled." />
+  <meta name="description" content="Convertí tus videos para las pantallas de MediaBus." />
   <meta name="theme-color" content="#1D112E" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -21,7 +21,7 @@
   <main>
     <section class="hero">
       <h1>Videos listos<br />para la <span class="lime">pantalla</span>.</h1>
-      <p class="lead">Subí tus piezas y descargalas con la máxima compatibilidad para MediaBus TV y Backled. Más livianas, sin trabas y sin audio si lo necesitás.</p>
+      <p class="lead">Subí tus piezas y descargalas listas para las pantallas de MediaBus: más livianas y sin trabas.</p>
       <p class="privacy"><span class="dot"></span>Todo se procesa en tu dispositivo. Ningún video se sube a un servidor.</p>
       <svg class="route" viewBox="0 0 600 120" aria-hidden="true">
         <defs>
@@ -40,13 +40,9 @@
     <section class="app" aria-label="Conversor">
       <div class="step">
         <span class="num">1</span>
-        <h2>Elegí la pantalla</h2>
+        <h2>Elegí qué necesitás</h2>
       </div>
       <div class="profiles" role="radiogroup" id="profiles"></div>
-      <label class="trim" id="trimRow" hidden>
-        <input type="checkbox" id="trim" checked />
-        <span>Cortar a 10 segundos (spec Backled)</span>
-      </label>
 
       <div class="step">
         <span class="num">2</span>
@@ -56,7 +52,7 @@
         <input type="file" id="file" accept="video/*,.mp4,.mov,.m4v,.mkv,.webm,.avi" multiple />
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 32V12m0 0-8 8m8-8 8 8M10 30v4a4 4 0 0 0 4 4h20a4 4 0 0 0 4-4v-4" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <strong>Arrastrá los videos acá</strong>
-        <span>o tocá para elegirlos · MP4, MOV, MKV, WEBM</span>
+        <span>o tocá para elegirlos</span>
       </label>
 
       <ul class="queue" id="queue"></ul>
@@ -66,22 +62,7 @@
         <button class="btn btn-ghost" id="zip" hidden>Descargar todo (.zip)</button>
         <button class="btn btn-link" id="clear" hidden>Vaciar lista</button>
       </div>
-      <p class="engine" id="engine">Preparando el motor de conversión…</p>
-    </section>
-
-    <section class="specs">
-      <h2>Qué hace con cada video</h2>
-      <div class="chips">
-        <span class="chip">H.264 Main 3.1</span>
-        <span class="chip">8-bit 4:2:0</span>
-        <span class="chip">30 fps constantes</span>
-        <span class="chip">Keyframe cada 1 s</span>
-        <span class="chip">Bitrate con tope fijo</span>
-        <span class="chip">Faststart</span>
-        <span class="chip">Sin metadata</span>
-        <span class="chip">Bordes negros si cambia la proporción</span>
-      </div>
-      <p>Pensado para los reproductores Android de las unidades: evita los congelamientos por keyframes largos, picos de bitrate y mezcla de formatos en la playlist.</p>
+      <p class="engine" id="engine">Preparando…</p>
     </section>
   </main>
 

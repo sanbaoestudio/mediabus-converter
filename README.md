@@ -1,15 +1,14 @@
 # Mediabus Converter
 
-App web para convertir videos con máxima compatibilidad para las pantallas de MediaBus TV y Backled.
+App web para convertir videos con máxima compatibilidad para las pantallas de MediaBus TV.
 La conversión corre en el navegador (ffmpeg.wasm): ningún video se sube a un servidor.
 
 ## Perfiles
 | Perfil | Salida |
 |---|---|
-| MediaBus TV | 1280×720, H.264 Main 3.1, 30 fps, keyframe 1 s, 2 Mbps tope, audio AAC en silencio |
-| MediaBus TV sin audio | Igual, sin pista de audio |
-| Backled | 1280×384, 1,5 Mbps, opción de cortar a 10 s |
-| Solo bajar peso | Resolución original (hasta 1080p), 1,5 Mbps, mantiene audio |
+| MediaBus TV | 1280×720, H.264 Main 3.1, 30 fps, keyframe 1 s, 2 Mbps tope, sin audio |
+
+| Solo bajar peso | Resolución original (hasta 1080p), 1,5 Mbps, sin audio |
 
 ## Desarrollo
 ```
